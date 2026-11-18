@@ -4,8 +4,10 @@ CS 230 - 7
 Data: Uber Pickups in New York City, April 2014 
 Source: FiveThirtyEight, Uber TLC FOIL Response (github.com/fivethirtyeight/uber-tlc-foil-response)
 LLM used: Claude
+App URL: https://eckerlin-uber-nyc.streamlit.app/
+This program/app will be used to help an Uber driver in Manhattan who can only drive a few shifts a week, and wants to know what days, areas, and hours produce the most pickups. Q1 compares pickups by hour to the daily average. Q2 maps where pickups cluster. Q3 compares pickups and market share across Uber bases. 
 
-This program/app will be used to help an Uber driver in Manhattan who can only drive a few shifts a week, and wants to know what days, areas, and hours produce the most pickups. 
+#[DEPLOY] Published to Streamlit Community Cloud from public GitHub respository (masoneckerlin/uber-nyc-app). When first trying to deploy a got a ModuleNotFoundError on "import matplotlib.pyplot. This was because the requirements.txt file that I had uploaded was never saved, so I uploaded a blank text file, so it matplotlib was never installed. On the GitHub site I pasted the text from there and committed the changes, which resolved the error, and my site was deployed and working. I also used a relative path for the CSV file and uploaded it along the app.py so the server could find the data file. 
 """
 
 import pandas as pd
